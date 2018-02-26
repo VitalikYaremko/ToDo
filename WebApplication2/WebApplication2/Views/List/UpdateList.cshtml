@@ -8,27 +8,28 @@
  
 @using (Html.BeginForm("UpdateList", "List", FormMethod.Post))
 {
-    <fieldset>
-        @Html.HiddenFor(m => m.Id)
-        <p>
-            @Html.HiddenFor(m=>m.Name)
-        </p>
-        <p>
-            @Html.LabelFor(m => m.NameList, "Название книги")
-            <br />
-            @Html.EditorFor(m => m.NameList)
-        </p>
-        <p>
-            @Html.LabelFor(m => m.Description, "Автор")
-            <br />
-            @Html.EditorFor(m => m.Description)
+<fieldset>
+    @Html.HiddenFor(m => m.Id)
+    <p>
+        @Html.HiddenFor(m => m.Name)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.NameList, "Name")
+        <br />
+        @Html.EditorFor(m => m.NameList)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Description, "Description")
+        <br />
+        @Html.EditorFor(m => m.Description)
 
-        </p>
-        <p>
-            @Html.LabelFor(m => m.Date, "Цена")
-            <br />
-            @Html.EditorFor(m => m.Date)
-        </p>
-        <p><input type="submit" value="Edit" /></p>
-    </fieldset>
+    </p>
+    
+    <p>
+        <label for="Date">Дата : </label>
+        <input type="date" id="Date" name="Date" />
+    </p>
+    
+    <p><input type="submit" value="Edit" /></p>
+</fieldset>
 }
