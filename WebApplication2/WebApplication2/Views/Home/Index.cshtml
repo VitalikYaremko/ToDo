@@ -1,18 +1,20 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<h3>@ViewBag.UserLogin</h3>
-<link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
-<style>
-    body {
-        font-family: 'Kavivanar', cursive;
-    }
-</style>
-<div class="jumbotron">
-    <h1>ToDoList</h1>
-    <p><font size="5" color="red" face="Arial"> ToDoList</font>
-    <div class="font-effect-shadow-multiple">This is a font effect!<div>
-    <p class="lead">ToDoList A web application in which a user can add, view, edit, and delete tasks (CRUD). All changes are stored in DB.</p>
+<p>
+    <font size="5" color="blue" class="  btn-link" > @ViewBag.UserLogin</font>
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kavivanar', cursive;
+            background-image: url(../../src/Ethereum.jpg);
+        }
+    </style>
+
+    <div class="jumbotron">
+        <h1>ToDoList</h1>
+
+<p class="lead">ToDoList A web application in which a user can add, view, edit, and delete tasks (CRUD). All changes are stored in DB.</p>
     <p><a href="https://www.google.com.ua/search?q=todoist&rlz=1C1SQJL_ukUA785UA785&oq=ToDo&aqs=chrome.1.69i57j0j35i39j0l3.2304j0j7&sourceid=chrome&ie=UTF-8" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
@@ -30,8 +32,6 @@
         <div class="jumbotron">
             <h2>Get more libraries</h2>
             <p><img src="~/src/compose.png"</p>
-
-
         </div>
     </div>
     <div class="col-md-4">

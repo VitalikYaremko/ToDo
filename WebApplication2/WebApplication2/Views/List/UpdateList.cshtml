@@ -16,20 +16,20 @@
     <p>
         @Html.LabelFor(m => m.NameList, "Name")
         <br />
-        @Html.EditorFor(m => m.NameList)
+        @Html.EditorFor(m => m.NameList, new { htmlAttributes = new { @class = "form-control" } })
     </p>
     <p>
         @Html.LabelFor(m => m.Description, "Description")
         <br />
-        @Html.EditorFor(m => m.Description)
+        @Html.EditorFor(m => m.Description, new { htmlAttributes = new { @class = "form-control" } })
 
     </p>
     
     <p>
-        <label for="Date">Дата : </label>
-        <input type="date" id="Date" name="Date" />
+        <label for="Date">Date</label>
+        <input type="date" id="Date" name="Date"  class="form-control" />
     </p>
     
-    <p><input type="submit" value="Edit" /></p>
+    <p><input type="submit" value="Edit" class="form-control" /></p>
 </fieldset>
 }

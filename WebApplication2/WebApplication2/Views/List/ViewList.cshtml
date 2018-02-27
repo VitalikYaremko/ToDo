@@ -31,8 +31,8 @@
                     @using (Html.BeginForm("EditList", "List", FormMethod.Post))
                     {
 
-                        <button name="action" value="Edit">Edit</button>
-                        <button name="action" value="Delete">Delete</button>
+                        <button name="action" value="Edit" class="form-control col-md-2">Edit</button>
+                        <button name="action" value="Delete" class="form-control col-md-2">Delete</button>
                         <input type="hidden" name="Id" value="@b.Id" />
 
                     }
